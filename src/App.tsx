@@ -5,7 +5,7 @@ import BackgroundEffects from './components/BackgroundEffects';
 import SlotMachine from './components/SlotMachine';
 import WinnerCelebration from './components/WinnerCelebration';
 import ControlPanel from './components/ControlPanel';
-
+import DemoOverlayBanner from './components/DemoOverlayBanner';
 type GameState = 'idle' | 'pre-draw' | 'drawing' | 'reveal';
 
 export default function App() {
@@ -233,6 +233,8 @@ export default function App() {
         selectedPrize={selectedPrize}
         onSelectPrize={setSelectedPrize}
       />
+      <DemoOverlayBanner />
     </div>
+
   );
 }
